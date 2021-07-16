@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'pw.mihou'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+// We highly recommend using the application plugin
+// to build your application, instead of a fatjar.
+application {
+    mainClassName = "pw.mihou.Velia"
+}
+
+dependencies {
+    // Add both Javacord and Velen, make sure the versions of the two
+    // matches. As of this moment, Velen 2.0 uses Javacord v3.3.2.
+    implementation 'pw.mihou:Velen:2.0.0'
+    implementation 'org.javacord:javacord:3.3.2'
+
+    // Add the loggers that we will be using.
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+    implementation 'org.slf4j:slf4j-api:1.7.31'
+
+    // This is needed if you want to use log4j2 with slf4j.
+    implementation 'org.apache.logging.log4j:log4j-to-slf4j:2.14.1'
+
+    // The database we will be using.
+    implementation 'redis.clients:jedis:3.6.0'
+}
