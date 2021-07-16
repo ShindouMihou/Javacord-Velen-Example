@@ -34,14 +34,16 @@ bot is to demonstrate the following:
 
 ## 💡 Commands
 Here are the basic commands implemented:
-- Avatar command
-- Help command
-- Ping command
-- Blacklist command
-- Prefix command.
+- **Avatar command**: To get the avatar of a user or yourself.
+- **Help command**: The starting point of the bot, shows all the commands categories.
+- **Ping command**: To get the latency of the bot from the server to Discord.
+- **Blacklist command**: An owner-only command that is used to blacklist users from using the bot.
+- **Prefix command**: To change or get the prefix used by the server.
 
 ## 🍅 Credits
-- [Velen](https://github.com/ShindouMihou/Velen)
-- [Javacord](https://github.com/Javacord/Javacord)
-- [Redis](https://redislabs.com)
-- [Jedis](https://github.com/redis/jedis)
+- [Velen](https://github.com/ShindouMihou/Velen): The framework used to quickly create this bot.
+- [Javacord](https://github.com/Javacord/Javacord): The library used by Velen and the bot to communicate with Discord, etc.
+- [Redis](https://redislabs.com): The database that is being used by this bot.
+- [Jedis](https://github.com/redis/jedis): The database driver that is being used by this bot.
+- [Logback](https://logback.qos.ch/): The logger used by this bot.
+- [SLF4J](http://www.slf4j.org/): The logging API used by the bot.
